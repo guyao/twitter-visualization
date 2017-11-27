@@ -1,0 +1,5 @@
+<ul>
+    {% for tag in hashtags %}
+    <li><a href="{{ url_for('api', q=tag) }}">{{tag}}</a></li>
+    {% endfor %}
+</ul>
