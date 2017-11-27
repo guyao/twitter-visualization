@@ -5,7 +5,7 @@ path = "data/"
 # X = sklearn.preprocessing.normalize(np.loadtxt(path + "low_dim_embedding"))
 X = np.loadtxt(path + "low_dim_embedding")
 
-with open(path + "labels") as f:
+with open(path + "labels", encoding="utf-8") as f:
     lines = f.readlines()
 labels = [label.strip() for label in lines]
 label_vector = {}
