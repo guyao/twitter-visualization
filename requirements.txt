@@ -1,0 +1,8 @@
+flask
+numpy
+scikit-learn
+scipy
+matplotlib
+
+# Official repo of mpld3 does not support `numpy.ndarray`. Use this fixed version instead.
+git+git://github.com/guyao/mpld3.git
