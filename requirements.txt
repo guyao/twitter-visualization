@@ -4,5 +4,8 @@ scikit-learn
 scipy
 matplotlib
 
-# Official repo of mpld3 does not support `numpy.ndarray`. Use this fixed version instead.
+# fastText Python API
+git+git://github.com/facebookresearch/fastText.git
+
+# Official repo of mpld3(https://github.com/mpld3/mpld3) does not support `numpy.ndarray`. Use this fixed version instead.
 git+git://github.com/guyao/mpld3.git

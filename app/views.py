@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import mpld3
 from app import app
 from app.data import X, labels, label_vector
+from model import text_embedding_model
 
 N = 30000
 N_neighbor = 400
@@ -25,6 +26,7 @@ def api():
         q = request.args.get('q', '')
     elif request.method == "POST":
         q = request.form.get('q', '')
+
     q = q if q.startswith("#") else "#" + q
     q = q.strip()
     if q not in label_vector:
@@ -107,10 +109,3 @@ def plot_interactive_scatter(low_dim_embedding, labels, inx, q):
     mpld3.plugins.connect(fig, tooltip)
     return fig
 
-
-@app.route("/test", methods=["GET", "POST"])
-def test():
-    if request.method == "POST":
-        return "post"
-    else:
-        return "get"
