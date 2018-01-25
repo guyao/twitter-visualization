@@ -25,7 +25,7 @@ def multi_core_tsne(embedding):
     # Require: MulticoreTSNE
     # https://github.com/DmitryUlyanov/Multicore-TSNE
     from MulticoreTSNE import MulticoreTSNE as TSNE
-    import sklearn.metric
+    import sklearn.metrics
     tsne = TSNE(perplexity=perplexity, n_components=n_components,
                 n_iter=n_iter, metric=sklearn.metrics.pairwise.cosine_distances)
     low_dim_embedding = tsne.fit_transform(embedding)
