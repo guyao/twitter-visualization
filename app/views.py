@@ -29,6 +29,8 @@ def api():
 
     q = q if q.startswith("#") else "#" + q
     q = q.strip()
+
+    # TODO
     if q not in label_vector:
         return "Hashtag does not exist"
 

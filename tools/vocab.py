@@ -1,7 +1,6 @@
 from fastText import load_model
 import argparse
 import sys
-import numpy
 
 
 def output(line, filename):
