@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import mpld3
 from app import app
 from app.data import X, labels, label_vector
-from model import text_embedding_model
+from app.model import text_embedding_model
 
 N = 30000
 N_neighbor = 400
