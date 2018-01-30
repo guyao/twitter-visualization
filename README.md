@@ -13,7 +13,7 @@ You will need
 * [mpld3](http://mpld3.github.io/)
 * [flask](http://flask.pocoo.org/)
 
-Note: Official release does not support `numpy.ndarray`, which may cause compatible problems. You should install [this fork of repository](https://github.com/guyao/mpld3) instead.
+Note: Official release of `mpld3` does not support `numpy.ndarray`, which may cause compatible problems. You should install [this fork of repository](https://github.com/guyao/mpld3) instead.
 
 ## Structure
 ```
